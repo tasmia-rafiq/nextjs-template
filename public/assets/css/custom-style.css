@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ NAVBAR ============ */
+.dropdown_menu, .dropdown_menu_submenu {
+  position: absolute;
+  z-index: 1000;
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+  min-width: 10.55rem;
+  padding: 1rem 0;
+  margin: 0;
+  top: auto;
+  left: 0;
+  font-size: 0.75rem;
+  color: #343f52;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+}
+
+.dropdown_menu_submenu {
+    margin-left: -115%;
+    margin-top: -35.2px;
+}
+
+.nav-item:hover .dropdown_menu,
+.nav-item .dropdown-item-subitem:hover .dropdown_menu_submenu {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-item {
+  font-size: 0.8rem !important;
+}
+
+.dropdown_menu .dropdown-toggle::after {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+  margin: 0;
+  border: 0;
+}
+
+.navbar-nav:not(.sm-collapsible) .dropdown-item .sub-arrow:before, .navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown_menu .dropdown-toggle::after {
+    color: #343f52;
+    content: "\e902";
+}
+
+
+/* ============ FOOTER ============ */
+footer ul li a {
+    color: #cacaca;
+    font-size: 0.85rem;
+    word-break:keep-all;
+    display: block;
+    padding-bottom: 0.3rem;
+}
