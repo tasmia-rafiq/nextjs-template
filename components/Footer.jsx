@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const Footer = ({ logoWhite }) => {
   return (
-    <footer className="bg-black pt-14 pb-7">
+    <footer className="bg-black pt-lg-14 pt-20 pb-7">
       <div className="container">
-        <div className="flex flex-row items-start justify-between">
-          <div className="col-lg-6">
+        <div className="flex flex-row flex-wrap items-start justify-between">
+          <div className="col-lg-4 col-12">
             <div className="">
-              <Image src={logoWhite} alt="SuperLabs" width={246} />
+              <Image src={logoWhite} alt="SuperLabs" width={246} style={{width: "60%"}} />
             </div>
           </div>
-          <div className="col-lg-2 px-3">
+          <div className="col-lg-2 col-md-4 col-12 offset-lg-2 px-3">
             <h4 className="text-slate-50 mb-3">SuperLabs Info</h4>
 
             <ul className="p-0">
@@ -31,7 +31,7 @@ const Footer = ({ logoWhite }) => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-2 px-3">
+          <div className="col-lg-2 col-md-4 col-12 px-3">
             <h4 className="text-slate-50 mb-3">Employees</h4>
 
             <ul className="p-0">
@@ -46,7 +46,7 @@ const Footer = ({ logoWhite }) => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-2 px-3">
+          <div className="col-lg-2 col-md-4 col-12 px-3">
             <h4 className="text-slate-50 mb-3">Vendor Info</h4>
 
             <ul className="p-0">

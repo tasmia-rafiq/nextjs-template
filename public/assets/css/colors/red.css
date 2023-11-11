@@ -69,6 +69,7 @@ a:hover,
 }
 
 .dropdown-toggle:after,
+.dropdown-item:hover .dropdown-toggle::after,
 .nav-link:focus,
 .nav-link:hover,
 .dropdown-header,
@@ -76,7 +77,8 @@ a:hover,
 .dropdown-item:focus,
 .dropdown-item:hover,
 .dropdown-item.active,
-.dropdown-item:active {
+.dropdown-item:active,
+.dropdown-item-subitem:hover .dropdown-toggle::after {
   color: #eb252d !important;
 }
 

@@ -1,34 +1,54 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 const Nav = ({ Logo }) => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   return (
     <header>
-      <nav className="navbar pt-1 bg-black">
+      <nav className="navbar pt-1">
         <div className="container lg:flex-row flex-nowrap items-center">
-          <div className="navbar-logo w-100">
+          <div className="navbar-logo py-5 py-lg-0 w-100">
             <a href="/">
               <Image src={Logo} alt="SuperLabs" />
             </a>
           </div>
 
-          <div className="">
-            <ul className="navbar-nav flex flex-row items-center justify-center">
+          <div className={`navbar-collapse offcanvas-nav ${
+              isNavbarOpen ? "open" : ""
+            }`}>
+            <div class="offcanvas-header d-lg-none d-xl-none">
+              <a href="./index">
+                <Image src={Logo} alt="Logo" />
+              </a>
+              <button
+                type="button"
+                class="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
+                aria-label="Close" onClick={toggleNavbar}
+              ></button>
+            </div>
+
+            <ul className="navbar-nav flex flex-col lg:flex-row lg:items-center justify-end">
               <li className="nav-item">
-                <a href="#/" className="nav-link px-4 py-5">
+                <a href="#/" className="nav-link px-4">
                   Work
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="#/" className="nav-link dropdown-toggle px-4 py-5">
+                <a href="#/" className="nav-link dropdown-toggle px-4">
                   Services
                 </a>
                 {/* DROPDOWN SUBMENU */}
                 <ul className="dropdown_menu py-4">
                   <li className="pt-3">
-                    <div className="flex flex-row">
+                    <div className="flex flex-col lg:flex-row">
                       <div className="col-lg-4">
                         <a href="#/">
                           <h6 className="dropdown-header font-bold">
@@ -131,37 +151,37 @@ const Nav = ({ Logo }) => {
                         <ul className="lg:pb-1 cc-3 ps-0">
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Cloud Infrastructure
+                              Cloud Infrastructure
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Manchine Learning
+                              Manchine Learning
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Enterprise Technology
+                              Enterprise Technology
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Payments
+                              Payments
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Security
+                              Security
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Blockchain
+                              Blockchain
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Application Development
+                              Application Development
                             </a>
                           </li>
                         </ul>
@@ -175,62 +195,60 @@ const Nav = ({ Logo }) => {
                         <ul className="lg:pb-1 cc-3 ps-0">
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Industrial Products
+                              Industrial Products
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Machine Design
+                              Machine Design
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Special Devices
+                              Special Devices
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Technical Documentation
+                              Technical Documentation
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Consept Visualizing
+                              Consept Visualizing
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Mechanical Engineeing
+                              Mechanical Engineeing
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Prototyping
+                              Prototyping
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Research & Development
+                              Research & Development
                             </a>
                           </li>
                         </ul>
 
                         <br />
                         <a href="#/">
-                          <h6 className="dropdown-header font-bold">
-                          Design
-                          </h6>
+                          <h6 className="dropdown-header font-bold">Design</h6>
                         </a>
 
                         <ul className="lg:pb-1 cc-3 ps-0">
                           <li>
                             <a href="#/" className="dropdown-item">
-                            Visual Identity
+                              Visual Identity
                             </a>
                           </li>
                           <li>
                             <a href="#/" className="dropdown-item">
-                            UX & UI
+                              UX & UI
                             </a>
                           </li>
                         </ul>
@@ -241,7 +259,7 @@ const Nav = ({ Logo }) => {
               </li>
 
               <li className="nav-item dropdown">
-                <a href="#/" className="nav-link dropdown-toggle px-4 py-5">
+                <a href="#/" className="nav-link dropdown-toggle px-4">
                   Strategy
                 </a>
                 {/* DROPDOWN SUBMENU */}
@@ -314,9 +332,30 @@ const Nav = ({ Logo }) => {
               </li>
 
               <li className="nav-item">
-                <a href="#/" className="nav-link px-4 py-5">
+                <a href="#/" className="nav-link px-4">
                   Careers
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* HAMBURGER MENU */}
+          <div class="navbar-other w-10 flex ms-auto">
+            <ul
+              class="navbar-nav flex-row align-items-center ms-auto"
+              data-sm-skip="true"
+            >
+              <li class="nav-item d-lg-none">
+                <div class="navbar-hamburger">
+                  <button
+                    className={`hamburger animate plain ${
+                      isNavbarOpen ? "active" : ""
+                    }`}
+                    data-toggle="offcanvas-nav" onClick={toggleNavbar}
+                  >
+                    <span className="bg-white"></span>
+                  </button>
+                </div>
               </li>
             </ul>
           </div>

@@ -19,7 +19,7 @@ body {
 .navbar .btn-sm,
 .nav-link,
 .lg-sub-html p {
-  font-size: 0.85rem;
+  font-size: 0.85rem !important;
 }
 
 .dropdown-menu {
