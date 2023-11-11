@@ -353,7 +353,7 @@ const Nav = ({ Logo }) => {
                     }`}
                     data-toggle="offcanvas-nav" onClick={toggleNavbar}
                   >
-                    <span className="bg-white"></span>
+                    <span></span>
                   </button>
                 </div>
               </li>

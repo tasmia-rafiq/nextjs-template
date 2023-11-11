@@ -89,7 +89,7 @@
 footer ul li a {
     color: #cacaca;
     font-size: 0.85rem;
-    word-break:keep-all;
+    word-break:keep-all !important;
     display: block;
     padding-bottom: 0.3rem;
 }

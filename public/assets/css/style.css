@@ -32708,7 +32708,7 @@ button.hamburger:after {
   height: 3px;
   margin: 0 0 5px;
   transition: all 200ms ease-in-out;
-  background: #fff;
+  background: #343f52;
 }
 
 @media (prefers-reduced-motion: reduce) {
