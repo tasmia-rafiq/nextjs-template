@@ -11,7 +11,7 @@ const Footer = ({ logoWhite }) => {
             </div>
           </div>
           <div className="col-lg-2 col-md-4 col-12 offset-lg-2 px-3">
-            <h4 className="text-slate-50 mb-3">SuperLabs Info</h4>
+            <h4 className="widget-title text-slate-50 mb-3">SuperLabs Info</h4>
 
             <ul className="p-0">
               <li>
@@ -32,7 +32,7 @@ const Footer = ({ logoWhite }) => {
             </ul>
           </div>
           <div className="col-lg-2 col-md-4 col-12 px-3">
-            <h4 className="text-slate-50 mb-3">Employees</h4>
+            <h4 className="widget-title text-slate-50 mb-3">Employees</h4>
 
             <ul className="p-0">
               <li>
@@ -47,7 +47,7 @@ const Footer = ({ logoWhite }) => {
             </ul>
           </div>
           <div className="col-lg-2 col-md-4 col-12 px-3">
-            <h4 className="text-slate-50 mb-3">Vendor Info</h4>
+            <h4 className="widget-title text-slate-50 mb-3">Vendor Info</h4>
 
             <ul className="p-0">
               <li>
