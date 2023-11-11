@@ -1,7 +1,7 @@
 import "@/public/assets/css/custom-style.css";
 import '../public/assets/css/style.css';
-import '@/public/assets/css/plugins.css';
 import '../public/assets/css/colors/red.css';
+import '@/public/assets/css/plugins.css';
 import '../public/assets/fonts/thicccboi/thicccboi.css';
 import Logo from "../public/assets/img/logo-light.png";
 import logoWhite from "../public/assets/img/whitelogo.png";

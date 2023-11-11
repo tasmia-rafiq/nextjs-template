@@ -8,7 +8,7 @@ a:hover,
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active,
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link,
+.nav-pills .show > .nav-link,
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active,
 .nav-link:focus,
@@ -19,13 +19,13 @@ a:hover,
 .navbar-light .navbar-text a:focus,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .show > .nav-link,
 .page-item.active .page-link,
 .page-link:hover,
 .page-link:focus,
-.bg-dark.text-inverse a:not(.btn):not([class*=link-]):hover,
+.bg-dark.text-inverse a:not(.btn):not([class*="link-"]):hover,
 .text-inverse a:not(.btn):hover,
-[class*=offcanvas-].text-inverse a:not(.btn):not([class*=link-]):hover,
+[class*="offcanvas-"].text-inverse a:not(.btn):not([class*="link-"]):hover,
 .filter ul li a.active,
 .filter ul li a:hover,
 .icon-list.bullet-primary i,
@@ -36,8 +36,8 @@ a:hover,
 .link-primary:hover,
 .post-meta li a:hover,
 .btn-outline-primary,
-.btn-check:active+.btn-outline-primary,
-.btn-check:checked+.btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show,
 .btn-outline-primary:active,
@@ -46,7 +46,10 @@ a:hover,
 .btn-soft-primary:hover,
 .btn-white.btn-play:hover,
 .btn-soft-primary,
-.navbar-dark.transparent.banner--stick .navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow,
+.navbar-dark.transparent.banner--stick
+  .navbar-nav:not(.sm-collapsible)
+  .nav-link
+  .sub-arrow,
 .navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow,
 .accordion-wrapper .card-header button,
 .accordion-wrapper .card-header button:before,
@@ -55,7 +58,7 @@ a:hover,
 .collapse-link:hover,
 .breadcrumb-item a:hover,
 .dropdown-toggle::after,
-.plyr--full-ui input[type=range],
+.plyr--full-ui input[type="range"],
 .progress-wrap:after,
 .banner--stick.transparent.navbar-dark .nav-link:focus,
 .banner--stick.transparent.navbar-dark .nav-link:hover,
@@ -65,12 +68,24 @@ a:hover,
   color: #eb252d;
 }
 
+.dropdown-toggle::after,
+.nav-link:focus,
+.nav-link:hover,
+.dropdown-header,
+a:hover,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #eb252d !important;
+}
+
 .link-dark:hover,
 .text-primary,
 .text-reset a:hover,
 a.text-reset:hover,
 .list-unstyled li a.active,
-.icon-list.bullet-bg i[class*=bullet-soft-primary],
+.icon-list.bullet-bg i[class*="bullet-soft-primary"],
 .icon-list.bullet-bg i.bullet-white,
 .icon-list.bullet-white i,
 .sidebar nav .nav-link.active,
@@ -89,28 +104,28 @@ a.text-reset:hover,
 .form-check-input:checked,
 .btn-primary,
 .btn-primary:hover,
-.btn-check:focus+.btn-primary,
+.btn-check:focus + .btn-primary,
 .btn-primary:focus,
-.btn-check:active+.btn-primary,
-.btn-check:checked+.btn-primary,
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
 .btn-primary.active,
 .btn-primary:active,
-.show>.btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle,
 .btn-primary.disabled:not(.btn-circle):not(.btn-block),
 .btn-primary:disabled:not(.btn-circle):not(.btn-block),
 .btn-outline-primary:hover,
-.btn-check:active+.btn-outline-primary,
-.btn-check:checked+.btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show,
 .btn-outline-primary:active,
-.navbar-dark:not([class*=navbar-bg-]).fixed .btn,
+.navbar-dark:not([class*="navbar-bg-"]).fixed .btn,
 .text-line:before {
   background-color: #eb252d;
 }
 
 .bg-primary,
-.icon-list.bullet-bg i[class*=bullet-primary] {
+.icon-list.bullet-bg i[class*="bullet-primary"] {
   background-color: #eb252d !important;
 }
 
@@ -118,7 +133,7 @@ a.text-reset:hover,
 .btn-primary.btn-circle.ripple::before,
 .plyr--video .plyr__controls .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__controls .plyr__control:hover,
-.plyr--video .plyr__controls .plyr__control[aria-expanded=true] {
+.plyr--video .plyr__controls .plyr__control[aria-expanded="true"] {
   background: #eb252d;
 }
 
@@ -131,18 +146,18 @@ a.text-reset:hover,
 .form-check-input:checked,
 .btn-primary,
 .btn-primary:hover,
-.btn-check:focus+.btn-primary,
+.btn-check:focus + .btn-primary,
 .btn-primary:focus,
 .btn-primary.disabled:not(.btn-circle):not(.btn-block),
 .btn-primary:disabled:not(.btn-circle):not(.btn-block),
 .btn-outline-primary,
 .btn-outline-primary:hover,
-.btn-check:active+.btn-outline-primary,
-.btn-check:checked+.btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show,
 .btn-outline-primary:active,
-.navbar-dark:not([class*=navbar-bg-]).fixed .btn,
+.navbar-dark:not([class*="navbar-bg-"]).fixed .btn,
 blockquote,
 .post-meta li a:hover,
 .hero-slider:before,
@@ -163,24 +178,24 @@ blockquote,
 .show > .btn-primary.dropdown-toggle {
   border-color: shade-color($primary, 12.5%),
 }*/
-.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before,
 .bs-tooltip-top .tooltip-arrow::before {
   border-top-color: #eb252d;
 }
 
-.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before,
 .bs-tooltip-end .tooltip-arrow::before,
 .wrapper.bg-primary.angled.lower-end:after,
 .wrapper.bg-primary.angled.upper-end:before {
   border-right-color: #eb252d;
 }
 
-.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before,
 .bs-tooltip-bottom .tooltip-arrow::before {
   border-bottom-color: #eb252d;
 }
 
-.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before,
 .wrapper.bg-primary.angled.lower-start:after,
 .wrapper.bg-primary.angled.upper-start:before {
@@ -259,8 +274,8 @@ blockquote,
   background-color: #fae3e4;
 }
 
-.icon-list.bullet-bg i[class*=bullet-soft-primary] {
-  background-color: #fae3e4 !important !important;
+.icon-list.bullet-bg i[class*="bullet-soft-primary"] {
+  background-color: #fae3e4 !important;
 }
 
 form.dark-fields .form-control:focus {
@@ -315,7 +330,14 @@ form.dark-fields .form-control:focus {
 }
 
 .bg-line.primary {
-  background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) 0.8px, #eb252d 1.6px, #eb252d 3px, rgba(255, 255, 255, 0) 3.8px, rgba(255, 255, 255, 0) 10px);
+  background: repeating-linear-gradient(
+    -55deg,
+    rgba(255, 255, 255, 0) 0.8px,
+    #eb252d 1.6px,
+    #eb252d 3px,
+    rgba(255, 255, 255, 0) 3.8px,
+    rgba(255, 255, 255, 0) 10px
+  );
 }
 
 .navbar-light .navbar-toggler-icon {
