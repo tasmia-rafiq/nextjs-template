@@ -68,7 +68,7 @@ a:hover,
   color: #eb252d;
 }
 
-.dropdown-toggle::after,
+.dropdown-toggle:after,
 .nav-link:focus,
 .nav-link:hover,
 .dropdown-header,
